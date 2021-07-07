@@ -10,15 +10,6 @@ config_s2i
 
 ######## CUSTOMIZATION STARTS HERE ############
 
-echo "---> Installing application source"
-cp -Rf /tmp/src/*.html ./
-
-DATE=`date`
-
-echo "---> Creating info page"
-echo "Page  made $DATE" >> ./info.html
-echo "Proudly made version $HTTPD_VERSION" >> ./info.html
-
 ######## CUSTOMIZATION ENDS HERE ############
 
 if [ -d ./httpd-cfg ]; then
